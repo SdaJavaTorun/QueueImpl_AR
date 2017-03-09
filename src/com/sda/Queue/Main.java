@@ -11,5 +11,6 @@ public class Main {
         queue.add("trzeci test");
 
         queue.show();
+        queue.ile();
     }
 }

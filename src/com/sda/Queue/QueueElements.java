@@ -40,7 +40,6 @@ public class QueueElements {
             // jako ostatni
             last.setNext(queue);
             last = queue;
-
         }
     }
     public void show () {
@@ -52,5 +51,18 @@ public class QueueElements {
                 element = element.getNext();
             }
         }
+    }
+
+    public void ile () {
+        int counter = 0;
+        if (first != null) {
+            QueueImpl element = first;
+
+            while (element != null) {
+                element = element.getNext();
+                counter++;
+            }
+        }
+        System.out.println("\nIlość elementów w kolejce: " + counter);
     }
 }
